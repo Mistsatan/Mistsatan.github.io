@@ -382,7 +382,7 @@
                 
               
 
-              <time title="创建时间：2018-08-09 16:26:09 / 修改时间：16:28:56" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
+              <time title="创建时间：2018-08-09 16:26:09 / 修改时间：16:31:19" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
             
 
             
@@ -432,7 +432,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">888</span>
+                <span title="本文字数">889</span>
               
 
               
@@ -467,49 +467,14 @@
 
       
         
-          
-            <p>在做CTF的逆向题目时遇到的函数，简单记录一下。</p>
-<blockquote>
-<p>首先放上参考链接：</p>
-<ul>
-<li><a href="https://blog.csdn.net/libing403/article/details/73158972" target="_blank" rel="noopener">https://blog.csdn.net/libing403/article/details/73158972</a></li>
-<li><a href="https://www.cnblogs.com/xingyunblog/p/3675568.html" target="_blank" rel="noopener">https://www.cnblogs.com/xingyunblog/p/3675568.html</a></li>
-</ul>
-</blockquote>
-<h2 id="fseek"><a href="#fseek" class="headerlink" title="fseek()"></a>fseek()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fseek(FILE *stream, long offset, int whence);</span><br></pre></td></tr></table></figure>
-<p><strong>功能：</strong>用来移动文件流的读写位置.</p>
-<p><strong>参数说明：</strong></p>
-<ul>
-<li>stream：已打开的文件指针</li>
-<li><p>offset：偏移量（long类型），表示要从起始点开始要移动的距离：</p>
-<p>| 模式 | 对应数值 |<br>|—-|—-|<br>| 正数    | 向前移 |<br>| 负数    | 向后移 |<br>| 0    | 保持不动 |</p>
-</li>
-</ul>
-<ul>
-<li><p>whence：模式，用于确定起始位置：</p>
-<p>| 模式 | 对应数值 | 偏移量的起始位置 |<br>|—-|—-|—-|<br>| SEEK_SET    | 0 | 文件开头 |<br>| SEEK_CUT    | 1 | 文件当前位置 |<br>| SEEK_END    | 2 | 文件末尾 |</p>
-</li>
-</ul>
-<p><strong>举例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//fp是一个文件指针</span><br><span class="line">fseek(fp, 0L, SEEK_SET);       //定位至文件开始处</span><br><span class="line">fseek(fp, 10L, SEEK_SET);      //定位至文件中的第10个字节</span><br><span class="line">fseek(fp, 2L， SEEK_CUR);      //从文件当前位置前移2个字节</span><br><span class="line">fseek(fp, 0L, SEEK_END);       //定位至文件结尾</span><br><span class="line">fseek(fp, -10, SEEK_END);      //从文件结尾处回退10个字节</span><br></pre></td></tr></table></figure></p>
-<p><strong>返回值：</strong></p>
-<ul>
-<li>一切正常，则返回0</li>
-<li>出现错误（例如试图移动的距离超出了文件的范围），则返回-1</li>
-</ul>
-<h2 id="ftell"><a href="#ftell" class="headerlink" title="ftell()"></a>ftell()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long ftell(FILE * stream);</span><br></pre></td></tr></table></figure>
-<p><strong>功能：</strong>用来获取文件读写指针的当前位置</p>
-<p><strong>参数说明：</strong></p>
-<ul>
-<li>stream：已打开的文件指针</li>
-</ul>
-<p><strong>返回值：</strong></p>
-<ul>
-<li>成功，则返回当前的读写位置</li>
-<li>失败，则返回 -1</li>
-</ul>
-<p>待续。。。</p>
-
-          
+          <p>在做CTF的逆向题目时遇到的函数，简单记录一下。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/09/fseek-和ftell-函数/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
