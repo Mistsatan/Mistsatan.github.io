@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Mistsatan">
 <meta property="og:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-09T08:31:19.521Z">
+<meta property="og:updated_time" content="2018-08-09T08:49:56.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="fseek()和ftell()函数">
 <meta name="twitter:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
@@ -378,7 +378,7 @@
                 
               
 
-              <time title="创建时间：2018-08-09 16:26:09 / 修改时间：16:31:19" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
+              <time title="创建时间：2018-08-09 16:26:09 / 修改时间：16:49:56" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
             
 
             
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">889</span>
+                <span title="本文字数">830</span>
               
 
               
@@ -484,15 +484,59 @@
 <p><strong>参数说明：</strong></p>
 <ul>
 <li>stream：已打开的文件指针</li>
-<li><p>offset：偏移量（long类型），表示要从起始点开始要移动的距离：</p>
-<p>| 模式 | 对应数值 |<br>|—-|—-|<br>| 正数    | 向前移 |<br>| 负数    | 向后移 |<br>| 0    | 保持不动 |</p>
-</li>
+<li>offset：偏移量（long类型），表示要从起始点开始要移动的距离：</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">模式</th>
+<th style="text-align:center">对应数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">正数</td>
+<td style="text-align:center">向前移</td>
+</tr>
+<tr>
+<td style="text-align:center">负数</td>
+<td style="text-align:center">向后移</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">保持不动</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><p>whence：模式，用于确定起始位置：</p>
-<p>| 模式 | 对应数值 | 偏移量的起始位置 |<br>|—-|—-|—-|<br>| SEEK_SET    | 0 | 文件开头 |<br>| SEEK_CUT    | 1 | 文件当前位置 |<br>| SEEK_END    | 2 | 文件末尾 |</p>
-</li>
+<li>whence：模式，用于确定起始位置：</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">模式</th>
+<th style="text-align:center">对应数值</th>
+<th style="text-align:center">偏移量的起始位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SEEK_SET</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">文件开头</td>
+</tr>
+<tr>
+<td style="text-align:center">SEEK_CUT</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">文件当前位置</td>
+</tr>
+<tr>
+<td style="text-align:center">SEEK_END</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">文件末尾</td>
+</tr>
+</tbody>
+</table>
 <p><strong>举例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//fp是一个文件指针</span><br><span class="line">fseek(fp, 0L, SEEK_SET);       //定位至文件开始处</span><br><span class="line">fseek(fp, 10L, SEEK_SET);      //定位至文件中的第10个字节</span><br><span class="line">fseek(fp, 2L， SEEK_CUR);      //从文件当前位置前移2个字节</span><br><span class="line">fseek(fp, 0L, SEEK_END);       //定位至文件结尾</span><br><span class="line">fseek(fp, -10, SEEK_END);      //从文件结尾处回退10个字节</span><br></pre></td></tr></table></figure></p>
 <p><strong>返回值：</strong></p>
 <ul>
@@ -569,7 +613,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/03/2018巅峰极客writeup（Misc）/" rel="next" title="2018巅峰极客writeup（Misc）">
+              <a href="/2018/08/03/2018巅峰极客writeup-Misc/" rel="next" title="2018巅峰极客writeup（Misc）">
                 <i class="fa fa-chevron-left"></i> 2018巅峰极客writeup（Misc）
               </a>
             
