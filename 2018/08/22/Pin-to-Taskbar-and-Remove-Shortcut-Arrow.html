@@ -108,25 +108,27 @@
 
 
 
-  <meta name="description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
-<meta name="keywords" content="C">
+  <meta name="description" content="昨天误将chrome从任务栏解锁之后，竟然发现右键不再出现“将此程序锁定到任务栏”的选项，思来想去觉得可能和前几天删除了桌面快捷方式箭头有关，在网上搜索之后发现果然如此，在此进行整理。">
+<meta name="keywords" content="电脑技巧">
 <meta property="og:type" content="article">
-<meta property="og:title" content="fseek()和ftell()函数">
-<meta property="og:url" content="https://mistsatan.github.io/2018/08/09/fseek-和ftell-函数/index.html">
+<meta property="og:title" content="“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头">
+<meta property="og:url" content="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html">
 <meta property="og:site_name" content="Mistsatan">
-<meta property="og:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
+<meta property="og:description" content="昨天误将chrome从任务栏解锁之后，竟然发现右键不再出现“将此程序锁定到任务栏”的选项，思来想去觉得可能和前几天删除了桌面快捷方式箭头有关，在网上搜索之后发现果然如此，在此进行整理。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-22T02:52:08.465Z">
+<meta property="og:image" content="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow/1.png">
+<meta property="og:updated_time" content="2018-08-23T04:03:02.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="fseek()和ftell()函数">
-<meta name="twitter:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
+<meta name="twitter:title" content="“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头">
+<meta name="twitter:description" content="昨天误将chrome从任务栏解锁之后，竟然发现右键不再出现“将此程序锁定到任务栏”的选项，思来想去觉得可能和前几天删除了桌面快捷方式箭头有关，在网上搜索之后发现果然如此，在此进行整理。">
+<meta name="twitter:image" content="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow/1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://mistsatan.github.io/2018/08/09/fseek-和ftell-函数/"/>
+  <link rel="canonical" href="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html"/>
 
 
 
@@ -136,7 +138,7 @@
   };
 </script>
 
-  <title>fseek()和ftell()函数 | Mistsatan</title>
+  <title>“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头 | Mistsatan</title>
   
 
 
@@ -336,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://mistsatan.github.io/2018/08/09/fseek-和ftell-函数/">
+    <link itemprop="mainEntityOfPage" href="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mistsatan">
@@ -353,7 +355,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">fseek()和ftell()函数
+          <h1 class="post-title" itemprop="name headline">“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头
               
             
           </h1>
@@ -378,7 +380,7 @@
                 
               
 
-              <time title="创建时间：2018-08-09 16:26:09" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
+              <time title="创建时间：2018-08-22 09:55:59" itemprop="dateCreated datePublished" datetime="2018-08-22T09:55:59+08:00">2018-08-22</time>
             
 
             
@@ -395,7 +397,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-22 10:52:08" itemprop="dateModified" datetime="2018-08-22T10:52:08+08:00">2018-08-22</time>
+                <time title="修改时间：2018-08-23 12:03:02" itemprop="dateModified" datetime="2018-08-23T12:03:02+08:00">2018-08-23</time>
               
             
           </span>
@@ -412,7 +414,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/skill/" itemprop="url" rel="index"><span itemprop="name">skill</span></a></span>
 
                 
                 
@@ -448,7 +450,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">827</span>
+                <span title="本文字数">3.8k</span>
               
 
               
@@ -462,7 +464,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -482,93 +484,88 @@
       
 
       
-        <p>在做CTF的逆向题目时遇到的函数，简单记录一下。</p>
+        <p>昨天误将chrome从任务栏解锁之后，竟然发现右键不再出现“将此程序锁定到任务栏”的选项，思来想去觉得可能和前几天删除了桌面快捷方式箭头有关，在网上搜索之后发现果然如此，在此进行整理。</p>
 <a id="more"></a>
 <blockquote>
-<p>首先放上参考链接：</p>
+<p>网上教程一搜一大把，仍然先放上参考链接：</p>
 <ul>
-<li><a href="https://blog.csdn.net/libing403/article/details/73158972" target="_blank" rel="noopener">https://blog.csdn.net/libing403/article/details/73158972</a></li>
-<li><a href="https://www.cnblogs.com/xingyunblog/p/3675568.html" target="_blank" rel="noopener">https://www.cnblogs.com/xingyunblog/p/3675568.html</a></li>
+<li><a href="http://www.xitongcheng.com/jiaocheng/win7_article_22252.html" target="_blank" rel="noopener">win7右键点击IE图标没有“将此程序锁定到任务栏’选项如何找回</a></li>
+<li><a href="https://jingyan.baidu.com/article/e6c8503c4e6386e54f1a18e2.html" target="_blank" rel="noopener">如何去掉桌面图标的快捷箭头</a></li>
+<li><a href="https://blog.csdn.net/mrknight/article/details/8900085" target="_blank" rel="noopener">在Win7下去掉快捷方式箭头的简便手动操作</a></li>
 </ul>
 </blockquote>
 <hr>
-<h2 id="fseek"><a href="#fseek" class="headerlink" title="fseek()"></a>fseek()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fseek(FILE *stream, long offset, int whence);</span><br></pre></td></tr></table></figure>
-<p><strong>功能：</strong>用来移动文件流的读写位置.</p>
-<p><strong>参数说明：</strong></p>
-<ul>
-<li>stream：已打开的文件指针</li>
-<li>offset：偏移量（long类型），表示要从起始点开始要移动的距离：</li>
+<h2 id="重新添加“将程序锁定到任务栏”选项"><a href="#重新添加“将程序锁定到任务栏”选项" class="headerlink" title="重新添加“将程序锁定到任务栏”选项"></a>重新添加“将程序锁定到任务栏”选项</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><ul>
+<li>用win+R键调出运行窗口</li>
+<li><p>依次输入以下三条命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmd /k reg add &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f</span><br><span class="line">cmd /k reg add &quot;HKEY_CLASSES_ROOT\piffile&quot; /v IsShortcut /f</span><br><span class="line">cmd /k taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>或者直接输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /k reg add &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f &amp; reg add &quot;HKEY_CLASSES_ROOT\piffile&quot; /v IsShortcut /f &amp; taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">模式</th>
-<th style="text-align:center">对应数值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">正数</td>
-<td style="text-align:center">向前移</td>
-</tr>
-<tr>
-<td style="text-align:center">负数</td>
-<td style="text-align:center">向后移</td>
-</tr>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">保持不动</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>whence：模式，用于确定起始位置：</li>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><ul>
+<li><p>新建一个文本文档，文档中输入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f</span><br><span class="line">reg add &quot;HKEY_CLASSES_ROOT\piffile&quot; /v IsShortcut /f</span><br><span class="line">taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文档扩展名改为.bat，然后双击运行</p>
+</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">模式</th>
-<th style="text-align:center">对应数值</th>
-<th style="text-align:center">偏移量的起始位置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">SEEK_SET</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">文件开头</td>
-</tr>
-<tr>
-<td style="text-align:center">SEEK_CUT</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">文件当前位置</td>
-</tr>
-<tr>
-<td style="text-align:center">SEEK_END</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">文件末尾</td>
-</tr>
-</tbody>
-</table>
-<p><strong>举例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//fp是一个文件指针</span><br><span class="line">fseek(fp, 0L, SEEK_SET);       //定位至文件开始处</span><br><span class="line">fseek(fp, 10L, SEEK_SET);      //定位至文件中的第10个字节</span><br><span class="line">fseek(fp, 2L， SEEK_CUR);      //从文件当前位置前移2个字节</span><br><span class="line">fseek(fp, 0L, SEEK_END);       //定位至文件结尾</span><br><span class="line">fseek(fp, -10, SEEK_END);      //从文件结尾处回退10个字节</span><br></pre></td></tr></table></figure></p>
-<p><strong>返回值：</strong></p>
-<ul>
-<li>一切正常，则返回0</li>
-<li>出现错误（例如试图移动的距离超出了文件的范围），则返回-1</li>
-</ul>
+<p>按照上述方法设置之后，在任务栏程序上点击右键就会显示“将此程序锁定到任务栏”选项了。不过，此时会发现，已经被删除的桌面快捷方式箭头又会重新出现，因此也附上删除桌面快捷方式箭头的方法。</p>
 <hr>
-<h2 id="ftell"><a href="#ftell" class="headerlink" title="ftell()"></a>ftell()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long ftell(FILE * stream);</span><br></pre></td></tr></table></figure>
-<p><strong>功能：</strong>用来获取文件读写指针的当前位置</p>
-<p><strong>参数说明：</strong></p>
-<ul>
-<li>stream：已打开的文件指针</li>
+<h2 id="删除桌面快捷方式箭头"><a href="#删除桌面快捷方式箭头" class="headerlink" title="删除桌面快捷方式箭头"></a>删除桌面快捷方式箭头</h2><h3 id="方法一-1"><a href="#方法一-1" class="headerlink" title="方法一"></a>方法一</h3><ul>
+<li>用win+R键调出运行窗口</li>
+<li>直接输入以下命令：</li>
 </ul>
-<p><strong>返回值：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /k reg delete &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f &amp; taskkill /f /im explorer.exe &amp; start explorer.exe</span><br></pre></td></tr></table></figure>
 <ul>
-<li>成功，则返回当前的读写位置</li>
-<li>失败，则返回 -1</li>
+<li>或者依次输入以下命令：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmd /k reg delete &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f</span><br><span class="line">cmd /k reg delete &quot;HKEY_CLASSES_ROOT\piffile&quot; /v IsShortcut /f [该命令可选]</span><br><span class="line">cmd /k taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
+<h3 id="方法二-1"><a href="#方法二-1" class="headerlink" title="方法二"></a>方法二</h3><ul>
+<li><p>新建一个文本文档，文档中输入以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_CLASSES_ROOT\lnkfile&quot; /v IsShortcut /f</span><br><span class="line">reg delete &quot;HKEY_CLASSES_ROOT\piffile&quot; /v IsShortcut /f</span><br><span class="line">taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文档扩展名改为.bat，然后双击运行</p>
+</li>
+</ul>
+<p>然而，按照上述方法设置之后，桌面快捷方式的箭头被删掉了，可是“将此程序锁定到任务栏”选项又会消失不见。</p>
 <hr>
+<h2 id="两种功能不能同时生效"><a href="#两种功能不能同时生效" class="headerlink" title="两种功能不能同时生效"></a>两种功能不能同时生效</h2><p>能够看到，修改注册表lnkfile和piffile的IsShortcut键这种方法，只能实现一个功能而必须舍弃另一个功能，这在实际使用中真的是十分不便。</p>
+<p>同时，还有一个副作用，删除桌面快捷方式箭头的同时，“另存为”资源管理器中的“桌面”快捷选择项也会不见，如图：<br><img src="./Pin-to-Taskbar-and-Remove-Shortcut-Arrow/1.png" alt=""><br>为了解决问题，再次搜索，果然发现了二者可以同时生效的方法。</p>
+<hr>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>这种方法的主要思想是：并不是真正意义上去掉箭头，而只是使用Win7自带的图标库中的透明图标代替快捷方式的箭头，这样就实现了隐藏箭头的效果，很方便很快捷。</p>
+<p>首先需要了解以下内容：</p>
+<p> <strong>1. Window图标库</strong><br>Windows 系统自己的默认图标（回收站、计算机、控制面板等等）都保存在系统盘（一般是C盘）的Windows/System32 文件夹里面的一些DLL文件里面——imageres.dll、shell32.dll 和 moricons.dll 等几个系统文件。</p>
+<ul>
+<li>moricons.dll：XP以前老风格图标；</li>
+<li>shell32.dll：XP常用图标；</li>
+<li>imageres.dll：Vista和Win7风格的图标。</li>
+</ul>
+<p>其中，imageres.dll的196号、shell32.dll的50~53号（其他图标资源编号对照表，详见<a href="https://wenku.baidu.com/view/9d133d24192e45361066f53e.html" target="_blank" rel="noopener">此处</a>），都是透明图标。</p>
+<p><strong>2. Shell Icons</strong></p>
+<p>注册表[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]中，”Shell Icons”子项的29表项，代表的就是快捷方式箭头：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">29	SI_SHORTCUT			Shortcut overlay (small arrow)</span><br></pre></td></tr></table></figure></p>
+<p>关于Shell Icons的其他各个表项值介绍，详见<a href="https://blog.csdn.net/mrknight/article/details/8900085" target="_blank" rel="noopener">此处</a>。</p>
+<h3 id="方法一-2"><a href="#方法一-2" class="headerlink" title="方法一"></a>方法一</h3><p><a href="https://zhidao.baidu.com/question/321484127.html" target="_blank" rel="noopener">该方法</a>使用了注册表方式，利用shell32.dll的50号透明图标进行修改。</p>
+<ul>
+<li>新建一个文本文档，文档中输入以下内容：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[HKEY_CLASSES_ROOT\lnkfile]</span><br><span class="line">&quot;IsShortcut&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\piffile]</span><br><span class="line">&quot;IsShortcut&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons]</span><br><span class="line">&quot;29&quot;=&quot;C:\\\\Windows\\\\System32\\\\shell32.dll,50&quot;</span><br><span class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons]</span><br><span class="line">&quot;29&quot;=&quot;C:\\\\Windows\\\\System32\\\\shell32.dll,50&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>将文档扩展名改为.reg，然后双击运行写入注册表</li>
+<li>运行以下命令重启资源管理器，或者注销一次，则会生效<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /f /im explorer.exe &amp; explorer.exe</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="方法二-2"><a href="#方法二-2" class="headerlink" title="方法二"></a>方法二</h3><p>该方法的原作者巧妙使用了imageres.dll的196号透明图标。</p>
+<ul>
+<li>去掉快捷方式箭头的批处理文件 DeleteArrow.bat（代码解释可见<a href="https://blog.csdn.net/mrknight/article/details/8900085" target="_blank" rel="noopener">原博文</a>）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,196&quot; /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+<ul>
+<li>恢复快捷方式箭头的批处理文件 RecoverArrow.bat<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>至此，大功告成。</p>
 
       
     </div>
@@ -601,7 +598,7 @@
     <strong>本文作者： </strong>Mistsatan</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://mistsatan.github.io/2018/08/09/fseek-和ftell-函数/" title="fseek()和ftell()函数">https://mistsatan.github.io/2018/08/09/fseek-和ftell-函数/</a>
+    <a href="https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html" title="“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头">https://mistsatan.github.io/2018/08/22/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -614,7 +611,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C</a>
+            <a href="/tags/电脑技巧/" rel="tag"><i class="fa fa-tag"></i> 电脑技巧</a>
           
         </div>
       
@@ -627,18 +624,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/22/Hexo博客-NexT主题优化记录/" rel="prev" title="Hexo博客-NexT主题优化记录">
-                <i class="fa fa-chevron-left"></i> Hexo博客-NexT主题优化记录
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/03/2018巅峰极客writeup-Misc/" rel="next" title="2018巅峰极客writeup（Misc）">
-                2018巅峰极客writeup（Misc） <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/22/Hexo-Blog-Theme-NexT-Optimization-Records.html" rel="next" title="Hexo博客-NexT主题优化记录">
+                Hexo博客-NexT主题优化记录 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -807,7 +800,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#fseek"><span class="nav-text">fseek()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ftell"><span class="nav-text">ftell()</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#重新添加“将程序锁定到任务栏”选项"><span class="nav-text">重新添加“将程序锁定到任务栏”选项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-text">方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除桌面快捷方式箭头"><span class="nav-text">删除桌面快捷方式箭头</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一-1"><span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二-1"><span class="nav-text">方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两种功能不能同时生效"><span class="nav-text">两种功能不能同时生效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方法"><span class="nav-text">解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一-2"><span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二-2"><span class="nav-text">方法二</span></a></li></ol></li></ol></div>
             
 
           </div>
