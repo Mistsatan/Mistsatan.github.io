@@ -19,7 +19,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '6.3.0',
-    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false,"clock":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -160,6 +160,22 @@
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
       <h2 class="post-title">
+            <a class="post-title-link" href="/articles/The-ABC-of-Graphviz.html" itemprop="url">
+                <span itemprop="name">Graphviz入门</span>
+            </a>
+      </h2>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-09-06T15:35:57+08:00"
+              content="2018-09-06" >
+          09-06
+        </time>
+      </div>
+    </header>
+  </article>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h2 class="post-title">
             <a class="post-title-link" href="/articles/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html" itemprop="url">
                 <span itemprop="name">“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头</span>
             </a>
@@ -198,7 +214,7 @@
             <nav class="site-state motion-element">
                 <div class="site-state-item site-state-posts">
                   <a href="/archives/">
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -210,7 +226,7 @@
                 </div>
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -222,7 +238,7 @@
                 <span class="links-of-author-item">
                   <a href="https://blog.csdn.net/baidu_28226047" target="_blank" title="CSDN"><i class="fa fa-fw fa-copyright"></i>CSDN</a>
                 </span>
-            </div>
+			</div>
         </div>
       </section>
     </div>
@@ -555,7 +571,10 @@
       }
     });
   </script>
-  <!-- 页面点击小红心 -->
-  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!-- 复制按钮 -->
+<script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>
