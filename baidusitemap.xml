@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://mistsatan.github.io/articles/Hexo-Blog-Theme-NexT-Optimization-Records.html</loc>
-    <lastmod>2018-09-06T09:24:43.472Z</lastmod>
+    <lastmod>2018-09-06T09:31:16.651Z</lastmod>
     <data>
         <display>
         <title>Hexo博客-NexT主题优化记录</title>
@@ -41,26 +41,6 @@
            
              
               <breadCrumb title="skill" url="https://mistsatan.github.io/categories/skill/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://mistsatan.github.io/articles/function.html</loc>
-    <lastmod>2018-08-29T09:17:56.676Z</lastmod>
-    <data>
-        <display>
-        <title>fseek()和ftell()函数</title>
-        <pubTime>2018-08-09T08:26:09.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-         
-           
-             
-              <breadCrumb title="tech" url="https://mistsatan.github.io/categories/tech/"/>
           
         </display>
     </data>
