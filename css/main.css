@@ -1856,7 +1856,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff53;
+  background: #98a385;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2989,7 +2989,6 @@ body {
   line-height: 74px;
 }
 .container .header-inner {
-  width: 300px;
   background: rgba(255,255,255,0);
 }
 .site-nav {
@@ -3039,12 +3038,12 @@ body {
 }
 .footer {
   line-height: 2;
-  background-color: rgba(255,255,255,0.85);
-  color: #333;
-  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.15);
+  background-color: rgba(34,34,34,0.85);
+  color: #ddd;
+  box-shadow: 0px -5px 50px 0px rgba(255,255,255,0.49);
 }
 .footer-inner {
-  padding-left: 0px;
+  padding-left: 300px;
 }
 .with-love {
   display: inline-block;
@@ -3136,6 +3135,8 @@ body {
   border-left: 3px solid #ffa900;
   background-color: #f9f9f9;
   font-size: 14px;
+  max-width: 90%;
+  margin: 2em 40px;
 }
 body {
   color: #444;
@@ -3146,18 +3147,8 @@ body {
 }
 blockquote {
   color: #666;
-  border-left: 4px solid #999;
+  border-left: 5px dotted #444;
   margin: auto 15px;
-}
-.highlight figcaption {
-  font-size: 12px;
-  color: #999;
-  line-height: 1em;
-  margin-bottom: 1em;
-  margin: 0em;
-  padding: 0.5em;
-  background: #444;
-  border-bottom: 1px solid rgba(255,255,255,0);
 }
 hr {
   background-color: rgba(255,255,255,0);
@@ -3176,21 +3167,24 @@ table>tbody>tr:nth-of-type(odd) {
 table>tbody>tr:nth-of-type(even) {
   background-color: rgba(255,255,255,0.25);
 }
-.post-nav {
-  border-bottom: 0px none #777;
-  border-top: 2px dashed #f9f9f9;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.post-nav-item {
-  padding: 10px 0;
-  width: 45%;
-}
-img {
+.posts-expand .post-body img {
   margin: 0px auto;
+  max-width: 95%;
+}
+.highlight figcaption {
+  font-size: 12px;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+  margin: 0em;
+  padding: 0.5em;
+  background: #444;
+  border-bottom: 1px solid rgba(255,255,255,0);
 }
 .highlight {
   position: relative;
+  max-width: 95%;
+  margin: 20px;
 }
 .btn-copy {
   display: inline-block;
@@ -3222,6 +3216,16 @@ img {
 }
 .highlight:hover .btn-copy {
   opacity: 1;
+}
+.post-nav {
+  border-bottom: 0px none #777;
+  border-top: 2px dashed #f9f9f9;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.post-nav-item {
+  padding: 10px 0;
+  width: 45%;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
