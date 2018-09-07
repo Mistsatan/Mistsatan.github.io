@@ -1856,7 +1856,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #98a385;
+  background: #c9e3ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3136,7 +3136,7 @@ body {
   background-color: #f9f9f9;
   font-size: 14px;
   max-width: 90%;
-  margin: 2em 40px;
+  margin: 2em 20px;
 }
 body {
   color: #444;
@@ -3148,15 +3148,11 @@ body {
 blockquote {
   color: #666;
   border-left: 5px dotted #444;
-  margin: auto 15px;
+  margin: auto 10px;
 }
 hr {
   background-color: rgba(255,255,255,0);
   background-image: repeating-linear-gradient(-45deg, #aaa, #aaa 4px, transparent 4px, transparent 8px);
-}
-table {
-  margin: 20px;
-  width: 95%;
 }
 thead {
   background-color: #f9f9f9;
@@ -3169,7 +3165,6 @@ table>tbody>tr:nth-of-type(even) {
 }
 .posts-expand .post-body img {
   margin: 0px auto;
-  max-width: 95%;
 }
 .highlight figcaption {
   font-size: 12px;
@@ -3177,35 +3172,32 @@ table>tbody>tr:nth-of-type(even) {
   line-height: 1em;
   margin-bottom: 1em;
   margin: 0em;
-  padding: 0.5em;
+  padding: 8px;
   background: #444;
   border-bottom: 1px solid rgba(255,255,255,0);
 }
 .highlight {
   position: relative;
-  max-width: 95%;
-  margin: 20px;
 }
 .btn-copy {
   display: inline-block;
   cursor: pointer;
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
+  background-color: rgba(255,255,255,0.85);
+  border: 1px none #d5d5d5;
+  border-radius: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-appearance: none;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 20px;
   color: #333;
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-  padding: 2px 6px;
+  padding: 1px 7px;
   position: absolute;
   right: 5px;
   top: 5px;

@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://mistsatan.github.io/articles/The-ABC-of-Graphviz.html</loc>
+    <lastmod>2018-09-07T10:00:45.457Z</lastmod>
+    <data>
+        <display>
+        <title>Graphviz入门</title>
+        <pubTime>2018-09-06T07:35:57.000Z</pubTime>
+        
+        <tag>Graphviz</tag>
+         
+        <tag>dot</tag>
+         
+         
+           
+             
+              <breadCrumb title="tech" url="https://mistsatan.github.io/categories/tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://mistsatan.github.io/articles/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html</loc>
     <lastmod>2018-09-06T13:16:30.226Z</lastmod>
     <data>
@@ -63,26 +85,6 @@
            
              
               <breadCrumb title="tech" url="https://mistsatan.github.io/categories/tech/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://mistsatan.github.io/articles/The-ABC-of-Graphviz.html</loc>
-    <lastmod>2018-09-06T12:55:49.521Z</lastmod>
-    <data>
-        <display>
-        <title>Graphviz入门</title>
-        <pubTime>2018-09-06T07:35:57.000Z</pubTime>
-        
-        <tag>Graphviz</tag>
-         
-         
-           
-             
-              <breadCrumb title="skill" url="https://mistsatan.github.io/categories/skill/"/>
           
         </display>
     </data>

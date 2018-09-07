@@ -5,10 +5,11 @@
     <url>%2Farticles%2FThe-ABC-of-Graphviz.html</url>
     <content type="text"><![CDATA[Graphviz是一款开源图形可视化软件。用Graphviz来绘图时，只需要编写dot脚本，就能够对图中的节点完成自动布局，非常便捷好用。本文对Graphviz的安装及使用方法进行简单的整理和介绍。 参考： graphviz官网 流程图（Flowchart） graphviz简介 Graphviz初步 Graphviz安装及简单使用 开源项目：【自动】绘图工具 Graphviz——《太子党关系网络》就是用它制作 1. Graphviz简介Graphviz（Graph Visualization）是一款开源图形可视化软件，使用dot作为脚本语言，然后使用布局引擎来解析此脚本，并完成自动布局。 用Graphviz来绘图时，主要工作就是编写dot脚本，说明各个节点之间的关系，而不需要考虑布局；同时，Graphviz也支持定制图中元素的具体特性，例如节点的颜色、字体，表格节点布局，线条样式，超链接和自定义形状等。 Graphviz提供丰富的导出格式，如常用的图片格式、SVG、PDF格式等等。 Graphviz还提供了多种布局模式： 布局 说明 示例 dot 默认布局方式，有向图 neato 无向图 fdp 无向图 sfdp 大型无向图 twopi 径向布局 circo 圆环布局 更多介绍可以查看官方简介。 2. 下载安装Graphviz支持Windows、Linux和Mac OS X等多个平台，本文记录Windows下的安装和简单使用。 Windows版官网下载地址：Graphviz-2.38 安装完成之后，在“开始”菜单-“所有程序”中，能看到Graphviz文件夹里有一个gvedit.exe的快捷方式，如下图，可以将其添加到桌面便于使用。 配置环境变量将Graphviz安装目录下的\bin文件夹添加到Path环境变量中。 安装验证打开cmd，输入命令 dot -version ，如果显示Graphviz版本信息，如下图，说明安装配置成功。 Python环境中安装（Pycharm）打开cmd，输入 pip install graphviz 命令，如下图，则说明安装成功。 3. 简单使用安装完成之后，就可以开始编写dot脚本了。 打开gvedit，新建一个.gv或.dot文件，并输入dot脚本：文件名：test.dot12345678910digraph G &#123; main -&gt; parse -&gt; execute; main -&gt; init; main -&gt; cleanup; execute -&gt; make_string; execute -&gt; printf init -&gt; make_string; main -&gt; printf; execute -&gt; compare;&#125; 有两种方法可以生成响应的图： 命令 gvedit界面 方法一：命令命令格式：1&lt;cmd&gt; &lt;inputfile&gt; -T &lt;format&gt; -o &lt;outputfile&gt; 参数说明： &lt;cmd&gt; dot 渲染的图具有明确方向性 neato 渲染的图缺乏方向性 twopi 渲染的图采用放射性布局 circo 渲染的图采用环型布局 fdp 渲染的图缺乏方向性 sfdp 渲染大型的图，图片缺乏方向性 &lt;format&gt; png、jpg、gif、bmp、tiff、ico、svg等图片格式 pdf、ps/eps等文档格式 完全的输出格式说明见官方文档 该实例可输入以下命令：1dot test.dot -T png -o test.png 方法二：gvedit界面在工具栏Graph-Layout（快捷键F5），或直接点击工具栏最后一个图标（奔跑的小人），即可在窗口中生成预览图。 Graph-Settings（快捷键Shift+F5）可以进行设置，可以选择布局命令（默认dot），也可以选择多种导出的文件类型（默认.png） 该实例生成图如下： 更多实例可见Graphviz Gallery。 dot语言的介绍可见这篇文章，后续将展开相关学习。]]></content>
       <categories>
-        <category>skill</category>
+        <category>tech</category>
       </categories>
       <tags>
         <tag>Graphviz</tag>
+        <tag>dot</tag>
       </tags>
   </entry>
   <entry>
