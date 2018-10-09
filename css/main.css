@@ -1856,7 +1856,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c9e3ff;
+  background: #ab7d47;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3087,8 +3087,8 @@ body {
 .sidebar-clock {
   text-align: center;
   width: 150px !important;
-  height: 80px !important;
-  margin: 0px auto !important;
+  height: 70px !important;
+  margin: 15px auto !important;
 }
 #sidebar-inner-clock.affix {
   position: fixed;
@@ -3218,6 +3218,24 @@ table>tbody>tr:nth-of-type(even) {
 .post-nav-item {
   padding: 10px 0;
   width: 45%;
+}
+canvas#resCanvas {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  canvas#resCanvas {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  canvas#resCanvas {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+  }
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
