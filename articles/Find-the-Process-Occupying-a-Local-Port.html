@@ -34,24 +34,25 @@
     }
   };
 </script>
-  <meta name="description" content="Mistsatan&apos;s Blog">
-<meta name="keywords" content="Mistsatan">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mistsatan">
-<meta property="og:url" content="https://mistsatan.github.io/categories/tech/index.html">
+  <meta name="description" content="用hexo本地预览时，直接输入命令“hexo s”后访问localhost:4000，总是无法显示博客页面。原因是4000端口被其他进程或程序占用，所以只好再加上“-p”参数指定其他端口。今天突然想要看看总是占用4000端口的到底是何方神圣，一下子就搜到了查看方法。">
+<meta name="keywords" content="Hexo,电脑技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="是谁占用了我的本地端口？">
+<meta property="og:url" content="https://mistsatan.github.io/articles/Find-the-Process-Occupying-a-Local-Port.html">
 <meta property="og:site_name" content="Mistsatan">
-<meta property="og:description" content="Mistsatan&apos;s Blog">
+<meta property="og:description" content="用hexo本地预览时，直接输入命令“hexo s”后访问localhost:4000，总是无法显示博客页面。原因是4000端口被其他进程或程序占用，所以只好再加上“-p”参数指定其他端口。今天突然想要看看总是占用4000端口的到底是何方神圣，一下子就搜到了查看方法。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-10-10T02:39:29.178Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mistsatan">
-<meta name="twitter:description" content="Mistsatan&apos;s Blog">
-  <link rel="canonical" href="https://mistsatan.github.io/categories/tech/"/>
+<meta name="twitter:title" content="是谁占用了我的本地端口？">
+<meta name="twitter:description" content="用hexo本地预览时，直接输入命令“hexo s”后访问localhost:4000，总是无法显示博客页面。原因是4000端口被其他进程或程序占用，所以只好再加上“-p”参数指定其他端口。今天突然想要看看总是占用4000端口的到底是何方神圣，一下子就搜到了查看方法。">
+  <link rel="canonical" href="https://mistsatan.github.io/articles/Find-the-Process-Occupying-a-Local-Port.html"/>
 <script type="text/javascript" id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
 </script>
-  <title>分类: tech | Mistsatan</title>
+  <title>是谁占用了我的本地端口？ | Mistsatan</title>
   <noscript>
   <style type="text/css">
     .use-motion .motion-element,
@@ -78,7 +79,7 @@
 </noscript>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -109,7 +110,7 @@
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
   </li>
@@ -151,77 +152,120 @@
       <div class="main-inner">
         <div class="content-wrap">
           <div id="content" class="content">
-  <div class="post-block category">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>tech<small>分类</small>
-        </h1>
-      </div>
+  <div id="posts" class="posts-expand">
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/The-ABC-of-Graphviz.html" itemprop="url">
-                <span itemprop="name">Graphviz入门</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-06T15:35:57+08:00"
-              content="2018-09-06" >
-          09-06
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/Hexo-Blog-Theme-NexT-Optimization-Records.html" itemprop="url">
-                <span itemprop="name">Hexo博客-NexT主题优化记录</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-22T09:48:21+08:00"
-              content="2018-08-22" >
-          08-22
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/Function-fseek-and-ftell.html" itemprop="url">
-                <span itemprop="name">fseek()和ftell()函数</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-09T16:26:09+08:00"
-              content="2018-08-09" >
-          08-09
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/2018-Peakgeek-Writeup-Misc.html" itemprop="url">
-                <span itemprop="name">2018巅峰极客writeup（Misc）</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-03T16:52:59+08:00"
-              content="2018-08-03" >
-          08-03
-        </time>
-      </div>
-    </header>
-  </article>
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://mistsatan.github.io/articles/Find-the-Process-Occupying-a-Local-Port.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mistsatan">
+      <meta itemprop="description" content="Mistsatan's Blog">
+      <meta itemprop="image" content="/images/egg.png">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mistsatan">
+    </span>
+      <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">是谁占用了我的本地端口？
+          </h1>
+        <div class="post-meta">
+          <span class="post-time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+                <span class="post-meta-item-text">发表于</span>
+              <time title="创建时间：2018-10-10 09:47:59 / 修改时间：10:39:29" itemprop="dateCreated datePublished" datetime="2018-10-10T09:47:59+08:00">2018-10-10</time>
+          </span>
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+                <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/skill/" itemprop="url" rel="index"><span itemprop="name">skill</span></a></span>
+            </span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+            <div class="post-symbolscount">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  <span class="post-meta-item-text">本文字数：</span>
+                <span title="本文字数">863</span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                <span title="阅读时长">1 分钟</span>
+            </div>
+        </div>
+      </header>
+    <div class="post-body" itemprop="articleBody">
+        <p>用hexo本地预览时，直接输入命令“hexo s”后访问localhost:4000，总是无法显示博客页面。原因是4000端口被其他进程或程序占用，所以只好再加上“-p”参数指定其他端口。<br>今天突然想要看看总是占用4000端口的到底是何方神圣，一下子就搜到了查看方法。</p>
+<a id="more"></a>
+<blockquote>
+<p>仍然首先放上参考链接：</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/d3963da3946f" target="_blank" rel="noopener">Hexo使用localhost:4000不能进行本地预览</a></li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="查看某个端口的占用情况"><a href="#查看某个端口的占用情况" class="headerlink" title="查看某个端口的占用情况"></a>查看某个端口的占用情况</h2><p><strong>——命令：netstat -aon|findstr “XXXX”</strong></p>
+<p>打开cmd，输入命令netstat -aon|findstr “4000”：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TCP    <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">4000</span>         <span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">0</span>:<span class="number">0</span>              LISTENING       <span class="number">2252</span></span><br><span class="line">TCP    <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">4000</span>         <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">49766</span>        ESTABLISHED     <span class="number">2252</span></span><br><span class="line">TCP    <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">49766</span>        <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">4000</span>         ESTABLISHED     <span class="number">12792</span></span><br><span class="line">UDP    <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">40000</span>        *:*                                    <span class="number">2832</span></span><br></pre></td></tr></table></figure>
+<p>可以看到，是PID为2252的进程占用了4000端口。</p>
+<h2 id="查看指定PID对应的进程"><a href="#查看指定PID对应的进程" class="headerlink" title="查看指定PID对应的进程"></a>查看指定PID对应的进程</h2><p><strong>——命令：tasklist|findstr “XXXX”</strong></p>
+<p>继续输入命令tasklist|findstr “2252”：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FoxitProtect.exe              <span class="number">2252</span> Services                   <span class="number">0</span>     <span class="number">17</span>,<span class="number">008</span> K</span><br></pre></td></tr></table></figure>
+<p>发现PID为2252的进程是“FoxitProtect.exe”，罪归祸首就是它。</p>
+<h2 id="结束进程"><a href="#结束进程" class="headerlink" title="结束进程"></a>结束进程</h2><p>如果有需要，就可以打开任务管理器，结束该进程。<br>或者，继续在cmd中输入命令taskkill /f /t /im FoxitProtect.exe即可。</p>
+<hr>
     </div>
+      <div>
+        <div>
+    <div style="text-align:center;color: #aaa;font-size:14px;">
+	<i class="fa fa-envira"></i> The End <i class="fa fa-envira"></i>
+	</div>
+</div>
+      </div>
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mistsatan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://mistsatan.github.io/articles/Find-the-Process-Occupying-a-Local-Port.html" title="是谁占用了我的本地端口？">https://mistsatan.github.io/articles/Find-the-Process-Occupying-a-Local-Port.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+      </div>
+    <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+            <a href="/tags/电脑技巧/" rel="tag"><i class="fa fa-tag"></i> 电脑技巧</a>
+        </div>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+              <a href="/articles/The-Trip-to-Guangzhou-Macau-and-Hongkong.html" rel="prev" title="【2018国庆•港澳广“逛吃逛吃”标准游客地标+网红美食店打卡7日轻度游】流水账？伪游记？全攻略（成都-广州-珠海-澳门-香港）">
+                <i class="fa fa-chevron-left"></i> 【2018国庆•港澳广“逛吃逛吃”标准游客地标+网红美食店打卡7日轻度游】流水账？伪游记？全攻略（成都-广州-珠海-澳门-香港）
+              </a>
+          </div>
+          <span class="post-nav-divider"></span>
+          <div class="post-nav-prev post-nav-item">
+              <a href="/articles/The-ABC-of-Graphviz.html" rel="next" title="Graphviz入门">
+                Graphviz入门 <i class="fa fa-chevron-right"></i>
+              </a>
+          </div>
+        </div>
+    </footer>
+  </div>
+  </article>
   </div>
           </div>
         </div>
@@ -234,7 +278,15 @@
   </div>
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
               <img class="site-author-image" itemprop="image"
@@ -273,6 +325,13 @@
 			</div>
         </div>
       </section>
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看某个端口的占用情况"><span class="nav-text">查看某个端口的占用情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看指定PID对应的进程"><span class="nav-text">查看指定PID对应的进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束进程"><span class="nav-text">结束进程</span></a></li></ol></div>
+          </div>
+        </section>
+      <!--/noindex-->
     </div>
   </aside>
       </div>
@@ -316,6 +375,8 @@
   <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
   <script type="text/javascript">
     // Popup Window;
