@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://mistsatan.github.io/articles/Unable-to-Open-Web-Pages.html</loc>
+    <lastmod>2018-11-12T03:23:22.063Z</lastmod>
+    <data>
+        <display>
+        <title>关闭VPN后，chrome打不开网页</title>
+        <pubTime>2018-11-12T03:18:20.000Z</pubTime>
+        
+        <tag>电脑技巧</tag>
+         
+         
+           
+             
+              <breadCrumb title="skill" url="https://mistsatan.github.io/categories/skill/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://mistsatan.github.io/articles/The-Trip-to-Guangzhou-Macau-and-Hongkong.html</loc>
-    <lastmod>2018-10-10T04:04:48.682Z</lastmod>
+    <lastmod>2018-10-18T07:32:10.629Z</lastmod>
     <data>
         <display>
         <title>【2018国庆•港澳广“逛吃逛吃”标准游客地标+网红美食店打卡7日轻度游】流水账？伪游记？全攻略（成都-广州-珠海-澳门-香港）</title>
@@ -19,6 +39,28 @@
            
              
               <breadCrumb title="trip" url="https://mistsatan.github.io/categories/trip/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://mistsatan.github.io/articles/Blue-Screen.html</loc>
+    <lastmod>2018-10-18T02:45:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>打破被蓝屏支配的恐惧</title>
+        <pubTime>2018-10-18T02:45:45.000Z</pubTime>
+        
+        <tag>电脑技巧</tag>
+         
+        <tag>待续</tag>
+         
+         
+           
+             
+              <breadCrumb title="skill" url="https://mistsatan.github.io/categories/skill/"/>
           
         </display>
     </data>
@@ -55,9 +97,9 @@
         <title>是谁占用了我的本地端口？</title>
         <pubTime>2018-10-10T01:47:59.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>电脑技巧</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -83,30 +125,6 @@
            
              
               <breadCrumb title="skill" url="https://mistsatan.github.io/categories/skill/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://mistsatan.github.io/articles/Hexo-Blog-Theme-NexT-Optimization-Records.html</loc>
-    <lastmod>2018-09-06T13:14:00.981Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo博客-NexT主题优化记录</title>
-        <pubTime>2018-08-22T01:48:21.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Next主题优化</tag>
-         
-        <tag>待续</tag>
-         
-         
-           
-             
-              <breadCrumb title="tech" url="https://mistsatan.github.io/categories/tech/"/>
           
         </display>
     </data>
