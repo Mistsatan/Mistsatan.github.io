@@ -47,7 +47,7 @@
 <meta property="og:site_name" content="Mistsatan">
 <meta property="og:description" content="本文主要用于记录部署在Github上的Hexo博客-NexT主题优化过程中的一些操作，内容大多来自网上各博客，大佬们都写得很全面了，文中仅做搜集整理工作，以便之后查阅。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-20T08:42:40.347Z">
+<meta property="og:updated_time" content="2019-09-20T09:04:47.201Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客-NexT主题优化记录">
 <meta name="twitter:description" content="本文主要用于记录部署在Github上的Hexo博客-NexT主题优化过程中的一些操作，内容大多来自网上各博客，大佬们都写得很全面了，文中仅做搜集整理工作，以便之后查阅。">
@@ -184,7 +184,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                   <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-20 16:42:40" itemprop="dateModified" datetime="2019-09-20T16:42:40+08:00">2019-09-20</time>
+                <time title="修改时间：2019-09-20 17:04:47" itemprop="dateModified" datetime="2019-09-20T17:04:47+08:00">2019-09-20</time>
           </span>
             <span class="post-category" >
               <span class="post-meta-divider">|</span>
@@ -219,7 +219,7 @@
     <div class="post-body" itemprop="articleBody">
         <p>本文主要用于记录部署在Github上的Hexo博客-NexT主题优化过程中的一些操作，内容大多来自网上各博客，大佬们都写得很全面了，文中仅做搜集整理工作，以便之后查阅。</p>
 <a id="more"></a>
-<h3 id="0-Hexo博客搭建"><a href="#0-Hexo博客搭建" class="headerlink" title="0. Hexo博客搭建"></a>0. Hexo博客搭建</h3><h4 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h4><p>这部分主要参考这篇文章，步骤完整，表达准确，无赘述，专心跟着走可以绕过一些坑（别问我怎么知道），棒棒哒：</p>
+<h3 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h3><h4 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h4><p>这部分主要参考这篇文章，步骤完整，表达准确，无赘述，专心跟着走可以绕过一些坑（别问我怎么知道），棒棒哒：</p>
 <ul>
 <li><a href="https://nicolegx.github.io/2018/07/04/%E5%8A%A8%E6%89%8B%E5%9C%A8GitHub%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">动手在GitHub上搭建Hexo博客</a></li>
 </ul>
@@ -295,7 +295,7 @@
 </tbody>
 </table>
 <p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官网</a>上有说明文档和很多主题，我最初配置的主题是<a href="https://github.com/sjaakvandenberg/flexy" target="_blank" rel="noopener">Flexy</a>，<a href="https://svdb.co/" target="_blank" rel="noopener">很漂亮</a>。<br>然而好奇心驱使，我想自己修改优化一些细节，无奈之前没有接触过，无从入手，检索发现<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT</a>主题使用极其广泛，有丰富的博文可以参考，所以配置了NexT，开始了入坑之行。</p>
-<h3 id="1-主题设定"><a href="#1-主题设定" class="headerlink" title="1. 主题设定"></a>1. 主题设定</h3><p>该部分内容大多来自<a href="http://theme-next.iissnan.com/getting-started.html#theme-settings" target="_blank" rel="noopener">NexT说明文档</a>（部分内容未同步于最新版）</p>
+<h3 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h3><p>该部分内容大多来自<a href="http://theme-next.iissnan.com/getting-started.html#theme-settings" target="_blank" rel="noopener">NexT说明文档</a>（部分内容未同步于最新版）</p>
 <p>首先区分配置文件：</p>
 <table>
 <thead>
@@ -355,7 +355,7 @@
 <h4 id="设置「菜单」"><a href="#设置「菜单」" class="headerlink" title="设置「菜单」"></a>设置「菜单」</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home                   # 主页</span><br><span class="line">  tags: /tags/ || tags              # 标签</span><br><span class="line">  categories: /categories/ || th    # 分类</span><br><span class="line">  archives: /archives/ || archive   # 归档</span><br><span class="line">  about: /about/ || user            # 关于我</span><br><span class="line">  #schedule: /schedule/ || calendar # 安排</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap # 站点地图</span><br><span class="line">  #commonweal: /404/ || heartbeat   # 404公益</span><br></pre></td></tr></table></figure>
 <p>可以直接将已有的菜单项前面注释 # 去除，也可以自己添加，添加的新项名称可以在 …/themes/next/languages 下的语言文件（如zh-CN.yml）中进行相应的编辑。<br>“||”之后的字段是菜单项的图标名，NexT 使用的图标由 <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome </a>提供，可以通过修改menu_icons字段的enable为true或者false来指定是否开启菜单图标。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">menu_icons:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
-<h4 id="置顶文章-设置置顶标签"><a href="#置顶文章-设置置顶标签" class="headerlink" title="置顶文章+设置置顶标签"></a>置顶文章+设置置顶标签</h4><p>参考文章为：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629" target="_blank" rel="noopener">hexo博客优化之文章置顶+置顶标签</a></p>
+<h3 id="自定义功能"><a href="#自定义功能" class="headerlink" title="自定义功能"></a>自定义功能</h3><h4 id="置顶文章-设置置顶标签"><a href="#置顶文章-设置置顶标签" class="headerlink" title="置顶文章+设置置顶标签"></a>置顶文章+设置置顶标签</h4><p>参考文章为：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629" target="_blank" rel="noopener">hexo博客优化之文章置顶+置顶标签</a></p>
 <hr>
 <p>待续。。。</p>
     </div>
@@ -462,7 +462,7 @@
       <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-Hexo博客搭建"><span class="nav-text">0. Hexo博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建步骤"><span class="nav-text">搭建步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一些Hexo基本命令"><span class="nav-text">一些Hexo基本命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-主题设定"><span class="nav-text">1. 主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置「界面语言」"><span class="nav-text">设置「界面语言」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择「Scheme」"><span class="nav-text">选择「Scheme」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置「菜单」"><span class="nav-text">设置「菜单」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶文章-设置置顶标签"><span class="nav-text">置顶文章+设置置顶标签</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo博客搭建"><span class="nav-text">Hexo博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建步骤"><span class="nav-text">搭建步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一些Hexo基本命令"><span class="nav-text">一些Hexo基本命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主题设定"><span class="nav-text">主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置「界面语言」"><span class="nav-text">设置「界面语言」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择「Scheme」"><span class="nav-text">选择「Scheme」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置「菜单」"><span class="nav-text">设置「菜单」</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义功能"><span class="nav-text">自定义功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶文章-设置置顶标签"><span class="nav-text">置顶文章+设置置顶标签</span></a></li></ol></li></ol></div>
           </div>
         </section>
       <!--/noindex-->
