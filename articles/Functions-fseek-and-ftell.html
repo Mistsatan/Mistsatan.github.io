@@ -39,24 +39,25 @@
     }
   };
 </script>
-  <meta name="description" content="Mistsatan&apos;s Blog">
-<meta name="keywords" content="Mistsatan">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mistsatan">
-<meta property="og:url" content="https://mistsatan.github.io/archives/2018/08/index.html">
+  <meta name="description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
+<meta name="keywords" content="C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fseek()和ftell()函数">
+<meta property="og:url" content="https://mistsatan.github.io/articles/Functions-fseek-and-ftell.html">
 <meta property="og:site_name" content="Mistsatan">
-<meta property="og:description" content="Mistsatan&apos;s Blog">
+<meta property="og:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-22T02:52:08.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mistsatan">
-<meta name="twitter:description" content="Mistsatan&apos;s Blog">
-  <link rel="canonical" href="https://mistsatan.github.io/archives/2018/08/"/>
+<meta name="twitter:title" content="fseek()和ftell()函数">
+<meta name="twitter:description" content="在做CTF的逆向题目时遇到的函数，简单记录一下。">
+  <link rel="canonical" href="https://mistsatan.github.io/articles/Functions-fseek-and-ftell.html"/>
 <script type="text/javascript" id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
 </script>
-  <title>归档 | Mistsatan</title>
+  <title>fseek()和ftell()函数 | Mistsatan</title>
   <noscript>
   <style type="text/css">
     .use-motion .motion-element,
@@ -83,7 +84,7 @@
 </noscript>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -110,7 +111,7 @@
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
   </li>
@@ -156,80 +157,193 @@
       <div class="main-inner">
         <div class="content-wrap">
           <div id="content" class="content">
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-      <span class="archive-page-counter">
-        嗯..! 目前共计 10 篇日志。 继续努力。
-      </span>
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
+  <div id="posts" class="posts-expand">
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/Pin-to-Taskbar-and-Remove-Shortcut-Arrow.html" itemprop="url">
-                <span itemprop="name">“将程序锁定到任务栏”选项 与 删除桌面快捷方式箭头</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-22T09:55:59+08:00"
-              content="2018-08-22" >
-          08-22
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/Hexo-Blog-Theme-NexT-Optimization-Records.html" itemprop="url">
-                <span itemprop="name">Hexo博客-NexT主题优化记录</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-22T09:48:21+08:00"
-              content="2018-08-22" >
-          08-22
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/Functions-fseek-and-ftell.html" itemprop="url">
-                <span itemprop="name">fseek()和ftell()函数</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-09T16:26:09+08:00"
-              content="2018-08-09" >
-          08-09
-        </time>
-      </div>
-    </header>
-  </article>
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h2 class="post-title">
-            <a class="post-title-link" href="/articles/2018-Peakgeek-Writeup-Misc.html" itemprop="url">
-                <span itemprop="name">2018巅峰极客writeup（Misc）</span>
-            </a>
-      </h2>
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-03T16:52:59+08:00"
-              content="2018-08-03" >
-          08-03
-        </time>
-      </div>
-    </header>
-  </article>
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://mistsatan.github.io/articles/Functions-fseek-and-ftell.html">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mistsatan">
+      <meta itemprop="description" content="Mistsatan's Blog">
+      <meta itemprop="image" content="/images/egg.png">
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mistsatan">
+    </span>
+      <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">fseek()和ftell()函数
+          </h1>
+        <div class="post-meta">
+          <span class="post-time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+                <span class="post-meta-item-text">发表于</span>
+              <time title="创建时间：2018-08-09 16:26:09" itemprop="dateCreated datePublished" datetime="2018-08-09T16:26:09+08:00">2018-08-09</time>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                  <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-08-22 10:52:08" itemprop="dateModified" datetime="2018-08-22T10:52:08+08:00">2018-08-22</time>
+          </span>
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+                <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">tech</span></a></span>
+            </span>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+            <div class="post-symbolscount">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  <span class="post-meta-item-text">本文字数：</span>
+                <span title="本文字数">827</span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                <span title="阅读时长">1 分钟</span>
+            </div>
+        </div>
+      </header>
+    <div class="post-body" itemprop="articleBody">
+        <p>在做CTF的逆向题目时遇到的函数，简单记录一下。</p>
+<a id="more"></a>
+<blockquote>
+<p>首先放上参考链接：</p>
+<ul>
+<li><a href="https://blog.csdn.net/libing403/article/details/73158972" target="_blank" rel="noopener">https://blog.csdn.net/libing403/article/details/73158972</a></li>
+<li><a href="https://www.cnblogs.com/xingyunblog/p/3675568.html" target="_blank" rel="noopener">https://www.cnblogs.com/xingyunblog/p/3675568.html</a></li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="fseek"><a href="#fseek" class="headerlink" title="fseek()"></a>fseek()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int fseek(FILE *stream, long offset, int whence);</span><br></pre></td></tr></table></figure>
+<p><strong>功能：</strong>用来移动文件流的读写位置.</p>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>stream：已打开的文件指针</li>
+<li>offset：偏移量（long类型），表示要从起始点开始要移动的距离：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">模式</th>
+<th style="text-align:center">对应数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">正数</td>
+<td style="text-align:center">向前移</td>
+</tr>
+<tr>
+<td style="text-align:center">负数</td>
+<td style="text-align:center">向后移</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">保持不动</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>whence：模式，用于确定起始位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">模式</th>
+<th style="text-align:center">对应数值</th>
+<th style="text-align:center">偏移量的起始位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SEEK_SET</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">文件开头</td>
+</tr>
+<tr>
+<td style="text-align:center">SEEK_CUT</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">文件当前位置</td>
+</tr>
+<tr>
+<td style="text-align:center">SEEK_END</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">文件末尾</td>
+</tr>
+</tbody>
+</table>
+<p><strong>举例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//fp是一个文件指针</span><br><span class="line">fseek(fp, 0L, SEEK_SET);       //定位至文件开始处</span><br><span class="line">fseek(fp, 10L, SEEK_SET);      //定位至文件中的第10个字节</span><br><span class="line">fseek(fp, 2L， SEEK_CUR);      //从文件当前位置前移2个字节</span><br><span class="line">fseek(fp, 0L, SEEK_END);       //定位至文件结尾</span><br><span class="line">fseek(fp, -10, SEEK_END);      //从文件结尾处回退10个字节</span><br></pre></td></tr></table></figure></p>
+<p><strong>返回值：</strong></p>
+<ul>
+<li>一切正常，则返回0</li>
+<li>出现错误（例如试图移动的距离超出了文件的范围），则返回-1</li>
+</ul>
+<hr>
+<h2 id="ftell"><a href="#ftell" class="headerlink" title="ftell()"></a>ftell()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">long ftell(FILE * stream);</span><br></pre></td></tr></table></figure>
+<p><strong>功能：</strong>用来获取文件读写指针的当前位置</p>
+<p><strong>参数说明：</strong></p>
+<ul>
+<li>stream：已打开的文件指针</li>
+</ul>
+<p><strong>返回值：</strong></p>
+<ul>
+<li>成功，则返回当前的读写位置</li>
+<li>失败，则返回 -1</li>
+</ul>
+<hr>
     </div>
+      <div>
+        <div>
+    <div style="text-align:center;color: #aaa;font-size:14px;">
+	<i class="fa fa-envira"></i> The End <i class="fa fa-envira"></i>
+	</div>
+</div>
+      </div>
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mistsatan</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://mistsatan.github.io/articles/Functions-fseek-and-ftell.html" title="fseek()和ftell()函数">https://mistsatan.github.io/articles/Functions-fseek-and-ftell.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+      </div>
+    <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C</a>
+        </div>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+              <a href="/articles/Hexo-Blog-Theme-NexT-Optimization-Records.html" rel="prev" title="Hexo博客-NexT主题优化记录">
+                <i class="fa fa-chevron-left"></i> Hexo博客-NexT主题优化记录
+              </a>
+          </div>
+          <span class="post-nav-divider"></span>
+          <div class="post-nav-prev post-nav-item">
+              <a href="/articles/2018-Peakgeek-Writeup-Misc.html" rel="next" title="2018巅峰极客writeup（Misc）">
+                2018巅峰极客writeup（Misc） <i class="fa fa-chevron-right"></i>
+              </a>
+          </div>
+        </div>
+    </footer>
+  </div>
+  </article>
   </div>
           </div>
         </div>
@@ -242,7 +356,15 @@
   </div>
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
               <img class="site-author-image" itemprop="image"
@@ -281,6 +403,13 @@
 			</div>
         </div>
       </section>
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#fseek"><span class="nav-text">fseek()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ftell"><span class="nav-text">ftell()</span></a></li></ol></div>
+          </div>
+        </section>
+      <!--/noindex-->
     </div>
   </aside>
       </div>
@@ -324,6 +453,8 @@
   <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
   <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
   <script type="text/javascript">
     // Popup Window;
